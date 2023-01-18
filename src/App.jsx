@@ -14,14 +14,14 @@ const App = () => {
   return (
     <StyledContainer>
       {loveData ? (
-        <StyledH1>PiKachu says</StyledH1>
+        <StyledH1>Pikachu says</StyledH1>
       ) : (
         <StyledH1>Go ask Pikachu for your true love</StyledH1>
       )}
 
       <div
         style={{
-          marginTop: "5rem",
+          marginTop: "1rem",
           display: "flex",
           padding: "2rem",
           backgroundColor: "#ffc40087",

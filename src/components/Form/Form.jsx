@@ -17,7 +17,7 @@ const Form = ({ changeLoveData }) => {
       {
         method: "GET",
         headers: {
-          "X-RapidAPI-Key": "your key",
+          "X-RapidAPI-Key": "you key",
           "X-RapidAPI-Host": "love-calculator.p.rapidapi.com",
         },
       }

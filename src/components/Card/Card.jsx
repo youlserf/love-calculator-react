@@ -54,13 +54,26 @@ const Card = ({ loveData }) => {
           fontWeight: "bold",
           fontSize: "5vh",
           margin: 0,
+          textAlign: "center",
         }}
       >
         {loveData.result}
       </p>
-      <p style={{ margin: 0, padding: 0, fontSize: "15vh" }}>
+
+      <img
+        src={
+          parseInt(loveData.percentage) > 50
+            ? "../../public/pikachu_happy.jpg"
+            : "../../public/pikachu_sad.png"
+        }
+        style={{
+          maxHeight: "10rem",
+          borderRadius: "15px",
+        }}
+      />
+      {/* <p style={{ margin: 0, padding: 0, fontSize: "15vh" }}>
         {parseInt(loveData.percentage) > 50 ? "🥰" : "😢"}
-      </p>
+      </p> */}
     </>
   );
 };
